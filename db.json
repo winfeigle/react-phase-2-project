@@ -1,0 +1,33 @@
+{
+    "goals": [
+      {
+        "id": 1,
+        "name": "Complete Flatiron School Software Engineering Bootcamp",
+        "progress": 40
+      },
+      {
+        "id": 2,
+        "name": "Launch Feedplan App for Market Testing",
+        "progress": 80
+      },
+      {
+        "id": 3,
+        "name": "Read 20 Business Books in 2022",
+        "progress": 65
+      }
+    ],
+    "accomplishments": [
+        {
+          "id": 1,
+          "name": "Sell First Company: Epiforce, Inc.",
+          "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
+          "completion-date": "July 2016"
+        },
+        {
+          "id": 2,
+          "name": "Sell Second Company: FP Media",
+          "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
+          "completion-date": "September 2016"
+        }
+      ]
+  }
