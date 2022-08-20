@@ -13,7 +13,7 @@ function GoalItem({ goal }) {
     }
 
     return(
-        <div className="goal-card">
+        <div className="card">
             <button onClick={handleDelete} className="delete-button">✕</button>
             <p><b className="label">Goal:</b> {name}</p>
             <p><b className="label">Progress:</b> {progress}%</p>

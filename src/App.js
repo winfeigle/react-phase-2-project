@@ -13,12 +13,18 @@ function App() {
       .then(setGoals);
   }, []);
 
+  useEffect(() => {
+    fetch(`http://localhost:8000/accomplishments`)
+      .then(res => res.json())
+      .then(setAccomplishments);
+  }, []);
+
 
   return (
     <div>
       <Header />
       <Goals goals={goals}/>
-      {/* <Accomplishments /> */}
+      <Accomplishments accomplishments={accomplishments}/>
     </div>
   );
 }

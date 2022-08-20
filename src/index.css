@@ -46,19 +46,30 @@ nav a:hover {
   margin-top: 50px;
 }
 
-.goal-card {
+#accomplishments-container{
+  display: flex;
+  margin-top: 50px;
+}
+
+.card {
   margin: 25px;
   width: 400px;
-  background-color: #0D2E4E;
   border-radius: 10px;
   padding: 10px 20px;
   display: flexbox;
 }
 
-.goal-card .delete-button {
+#accomplishments-container .card{
+  background-color: #433d8c;
+}
+
+#goals-container .card {
+  background-color: #0D2E4E;
+}
+
+.card .delete-button {
   width: 25px;
   height: 25px;
-  background-color: #7A73FE;
 	border: none;
   border-radius: 50%;
 	padding: 3px;
@@ -69,17 +80,27 @@ nav a:hover {
   align-content: flex-end;
 }
 
-.goal-card img{
+#goals-container .card .delete-button {
+  background-color: #7A73FE;
+}
+
+#accomplishments-container .card .delete-button {
+  color: white;
+  background-color: rgba(255, 255, 255, 0%);
+}
+
+
+.card img{
   display: inline;
   align-items: center;
   width: 10%;
 }
 
-.goal-card p .label {
+.card p .label {
   color: #adbdcc81;
 }
 
-.goal-card .progress-slider {
+.card .progress-slider {
   width: 100%;
 }
 
