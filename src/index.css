@@ -21,3 +21,24 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+nav {
+  margin: 20px;
+}
+
+nav a {
+  color: #00D4FF;
+  padding: 10px 20px;
+  margin-right: 20px;
+  text-decoration: inherit; /* no underline */
+  border: solid #00D4FF 1px;
+  border-radius: 10px;
+}
+
+nav a:hover {
+  color: #0A2540;
+  background-color: #00D4FF;
+  transition: 200ms;
+}
+
+
