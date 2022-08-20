@@ -1,4 +1,14 @@
+/* Color Theme Swatches in Hex */
+.color-theme_Screen-Shot-2022-08-20-at-12-1-hex { color: #0A2540; }
+.color-theme_Screen-Shot-2022-08-20-at-12-2-hex { color: #0D2E4E; }
+.color-theme_Screen-Shot-2022-08-20-at-12-3-hex { color: #7A73FE; }
+.color-theme_Screen-Shot-2022-08-20-at-12-4-hex { color: #00D4FF; }
+.color-theme_Screen-Shot-2022-08-20-at-12-5-hex { color: #ADBDCC; }
+
+
 body {
+  background-color: #0A2540;
+  color: white;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
