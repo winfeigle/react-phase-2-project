@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Route, Switch } from "react-router-dom";
 
-import Header from "./components/NavBar";
+import NavBar from "./components/NavBar";
 import Goals from "./components/Goals";
 import Accomplishments from "./components/Accomplishments";
 
@@ -34,7 +34,7 @@ function App() {
 
   return (
     <div>
-      <Header />
+      <NavBar />
       <Switch>
         <Route path="/goals">
           <Goals goals={goals} onUpdateGoal={onUpdateGoal}/>

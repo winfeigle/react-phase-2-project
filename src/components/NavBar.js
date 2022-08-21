@@ -1,6 +1,6 @@
 import React from "react";
 
-function Header() {
+function NavBar() {
     return(
         <header>
           <nav>
@@ -20,4 +20,4 @@ function Header() {
     );
 }
 
-export default Header;
+export default NavBar;
