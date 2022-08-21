@@ -7,7 +7,7 @@
 
 
 body {
-  background-color: #0A2540;
+  background-color: #0D2E4E;
   color: white;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -22,23 +22,9 @@ code {
     monospace;
 }
 
-.site-title{
-  margin: 50px 0px 50px 20px;
-}
-
-.nav-link {
-  color: #00D4FF;
-  padding: 10px 20px;
-  margin: 0px 0px 0px 20px;
-  text-decoration: inherit; /* no underline */
-  border: solid #00D4FF 1px;
-  border-radius: 10px;
-}
-
-nav a:hover {
-  color: #0A2540;
-  background-color: #00D4FF;
-  transition: 200ms;
+#nav-bar {
+  background-color: #0A2540;
+  padding: 50px 0px 50px 50px;
 }
 
 #goals-container {
@@ -64,7 +50,7 @@ nav a:hover {
 }
 
 #goals-container .card {
-  background-color: #0D2E4E;
+  background-color: #0A2540;
 }
 
 .card .delete-button {

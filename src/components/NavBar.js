@@ -6,7 +6,7 @@ function NavBar() {
   const linkStyles = {
     color: "#00D4FF",
     padding: "10px 20px",
-    margin: "0px 0px 0px 20px",
+    marginRight: "20px",
     background: "#0D2E4E",
     textDecoration: "inherit", /* no underline */
     borderRadius: "10px"
@@ -18,7 +18,7 @@ function NavBar() {
   }
 
     return(
-        <div>
+        <div id="nav-bar">
           <h1 className="site-title">
               VISION/BOARD
           </h1>
