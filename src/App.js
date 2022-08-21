@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Route, Switch } from "react-router-dom";
 
-import Header from "./components/Header";
+import Header from "./components/NavBar";
 import Goals from "./components/Goals";
 import Accomplishments from "./components/Accomplishments";
 
