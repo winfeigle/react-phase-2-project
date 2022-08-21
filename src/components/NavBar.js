@@ -4,12 +4,12 @@ import { NavLink } from "react-router-dom";
 function NavBar() {
 
   const linkStyles = {
-    width: "100px",
-    padding: "12px",
-    margin: "0 6px 6px",
-    background: "blue",
-    textDecoration: "none",
-    color: "white",
+    color: "#00D4FF",
+    padding: "10px 20px",
+    margin: "0px 0px 0px 20px",
+    background: "#0D2E4E",
+    textDecoration: "inherit", /* no underline */
+    borderRadius: "10px"
   };
 
     return(
@@ -19,13 +19,13 @@ function NavBar() {
           </h1>
           <NavLink
             to="/"
-            /* set exact so it knows to only set activeStyle when route is deeply equal to link */
+            /* set "exact" so it knows to only set activeStyle when route is deeply equal to link */
             exact
             /* add styling to Navlink */
             style={linkStyles}
             /* add prop for activeStyle */
             activeStyle={{
-              background: "darkblue",
+              border: "solid #00D4FF 1px",
             }}
             >Home</NavLink>
 
@@ -34,7 +34,7 @@ function NavBar() {
             exact
             style={linkStyles}
             activeStyle={{
-              background: "darkblue",
+              border: "solid #00D4FF 1px",
             }}
             >Goals</NavLink>
 
@@ -43,7 +43,7 @@ function NavBar() {
             exact
             style={linkStyles}
             activeStyle={{
-              background: "darkblue",
+              border: "solid #00D4FF 1px",
             }}
             >Accomplishments</NavLink>
         <p>

@@ -22,11 +22,11 @@ code {
     monospace;
 }
 
-nav h1{
+.site-title{
   margin: 50px 0px 50px 20px;
 }
 
-nav a {
+.nav-link {
   color: #00D4FF;
   padding: 10px 20px;
   margin: 0px 0px 0px 20px;
