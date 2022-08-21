@@ -1,11 +1,15 @@
 import React from "react";
 import GoalItem from "./GoalItem";
 
-function Goals({ goals }){
+function Goals({ goals, onUpdateGoal }){
 
     const renderGoals = goals.map(goal => {
         return(
-            <GoalItem key={goal.id} goal={goal} />
+            <GoalItem 
+                key={goal.id} 
+                goal={goal} 
+                onUpdateGoal={onUpdateGoal}
+                />
         )
     })
 

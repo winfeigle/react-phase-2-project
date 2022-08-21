@@ -19,11 +19,21 @@ function App() {
       .then(setAccomplishments);
   }, []);
 
+  const onUpdateGoal = (updatedGoal) => {
+    const updatedGoals = goals.map(originalGoal => {
+      if(originalGoal.id === updatedGoal.id){
+        return updatedGoal;
+      } else{
+        return originalGoal;
+      }
+    });
+    console.log(updatedGoals);
+  }
 
   return (
     <div>
       <Header />
-      <Goals goals={goals}/>
+      <Goals goals={goals} onUpdateGoal={onUpdateGoal}/>
       <Accomplishments accomplishments={accomplishments}/>
     </div>
   );
