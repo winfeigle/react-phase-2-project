@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import { Route, Switch } from "react-router-dom";
+
 import Header from "./components/Header";
 import Goals from "./components/Goals";
 import Accomplishments from "./components/Accomplishments";
@@ -33,8 +35,14 @@ function App() {
   return (
     <div>
       <Header />
-      <Goals goals={goals} onUpdateGoal={onUpdateGoal}/>
-      <Accomplishments accomplishments={accomplishments}/>
+      <Switch>
+        <Route path="/goals">
+          <Goals goals={goals} onUpdateGoal={onUpdateGoal}/>
+        </Route>
+        <Route path="/accomplishments">
+          <Accomplishments accomplishments={accomplishments}/>
+        </Route>
+      </Switch>
     </div>
   );
 }
