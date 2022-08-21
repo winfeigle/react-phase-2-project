@@ -12,6 +12,11 @@ function NavBar() {
     borderRadius: "10px"
   };
 
+  const activeStyle = {
+    border: "solid #00D4FF 2px",
+    fontWeight: "bold"
+  }
+
     return(
         <div>
           <h1 className="site-title">
@@ -24,27 +29,21 @@ function NavBar() {
             /* add styling to Navlink */
             style={linkStyles}
             /* add prop for activeStyle */
-            activeStyle={{
-              border: "solid #00D4FF 1px",
-            }}
+            activeStyle={activeStyle}
             >Home</NavLink>
 
           <NavLink
             to="/goals"
             exact
             style={linkStyles}
-            activeStyle={{
-              border: "solid #00D4FF 1px",
-            }}
+            activeStyle={activeStyle}
             >Goals</NavLink>
 
         <NavLink
             to="/accomplishments"
             exact
             style={linkStyles}
-            activeStyle={{
-              border: "solid #00D4FF 1px",
-            }}
+            activeStyle={activeStyle}
             >Accomplishments</NavLink>
         <p>
       
