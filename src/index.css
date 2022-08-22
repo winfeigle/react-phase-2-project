@@ -34,19 +34,30 @@ h2 {
   align-items: center;
 }
 
-#home-icon{
-  display: flex;
-  height: 20px;
+#home-container {
+  margin: 80px 50px;
+  width: 50%;
 }
 
+#home-container p{
+  opacity: 75%;
+}
+
+#home-container #author a{
+  font-weight: bold;
+  color: #00D4FF;
+}
 
 #goals-container, #accomplishments-container {
   display: flex;
-  margin-top: 50px;
+    flex-wrap: wrap;
+    margin: 50px 25px;
+    max-width: 75%;
+    justify-content: left;
 }
 
 .card {
-  margin: 25px;
+  margin: 10px;
   width: 400px;
   border-radius: 10px;
   padding: 10px 20px;
@@ -82,7 +93,6 @@ h2 {
   background-color: rgba(255, 255, 255, 0%);
 }
 
-
 .card img{
   display: inline;
   align-items: center;
@@ -98,7 +108,7 @@ h2 {
 }
 
 #form-section {
-  margin: 50px;
+  margin-left: 50px;
 }
 
 form input, select, button {
@@ -113,7 +123,7 @@ form select{
 }
 
 form input{
-  margin: 0px 15px 0px 5px;
+  margin: 15px 15px 0px 5px;
 }
 
 form button {
