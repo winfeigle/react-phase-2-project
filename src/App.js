@@ -37,16 +37,22 @@ function App() {
       type === 'goals' ? setGoals(goals => [...goals, newData]) : setAccomplishments(accomplishments => [...accomplishments, newData])
   }
 
+  const onDeleteClick = (id, type) => {
+    fetch(`http://localhost:8000/${type}/${id}`, {
+      method: 'DELETE'
+    })
+  }
+
   return (
     <div>
       <NavBar />
       <Form onFormSubmit={onFormSubmit}/>
       <Switch>
         <Route path="/goals">
-          <Goals goals={goals} onUpdateGoal={onUpdateGoal}/>
+          <Goals goals={goals} onUpdateGoal={onUpdateGoal} onDeleteClick={onDeleteClick}/>
         </Route>
         <Route path="/accomplishments">
-          <Accomplishments accomplishments={accomplishments}/>
+          <Accomplishments accomplishments={accomplishments} onDeleteClick={onDeleteClick}/>
         </Route>
       </Switch>
     </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import GoalItem from "./GoalItem";
 
-function Goals({ goals, onUpdateGoal }){
+function Goals({ goals, onUpdateGoal, onDeleteClick }){
 
     const renderGoals = goals.map(goal => {
         return(
@@ -9,6 +9,7 @@ function Goals({ goals, onUpdateGoal }){
                 key={goal.id} 
                 goal={goal} 
                 onUpdateGoal={onUpdateGoal}
+                onDeleteClick={onDeleteClick}
                 />
         )
     })

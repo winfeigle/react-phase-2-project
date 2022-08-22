@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 
-function GoalItem({ goal, onUpdateGoal }) {
+function GoalItem({ goal, onUpdateGoal, onDeleteClick }) {
     const {id, name, progress} = goal;
     const [progressBar, setProgressBar] = useState(progress);
 

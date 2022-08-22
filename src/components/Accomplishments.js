@@ -1,11 +1,15 @@
 import React from "react";
 import AccomplishmentItem from "./AccomplishmentItem";
 
-function Accomplishments({ accomplishments }){
+function Accomplishments({ accomplishments, onDeleteClick }){
 
     const renderAccomplishments = accomplishments.map(accomplishment => {
         return(
-            <AccomplishmentItem key={accomplishment.id} accomplishment={accomplishment} />
+            <AccomplishmentItem 
+                key={accomplishment.id} 
+                accomplishment={accomplishment}
+                onDeleteClick={onDeleteClick} 
+                />
         )
     })
 
