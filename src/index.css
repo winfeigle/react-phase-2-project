@@ -22,6 +22,12 @@ code {
     monospace;
 }
 
+h2 {
+  font-size: 1.25rem;
+  font-weight: normal;
+  opacity: 70%;
+}
+
 #nav-bar {
   background-color: #0A2540;
   padding: 25px 0px 40px 50px;
@@ -94,9 +100,10 @@ code {
   margin: 50px;
 }
 
-form input, select {
+form input, select, button {
   padding: 10px;
   border-radius: 10px;
+  border: none;
 }
 
 form select{
@@ -106,6 +113,17 @@ form select{
 
 form input{
   margin: 0px 15px 0px 5px;
+}
+
+form button {
+  font-weight: bold;
+  opacity: 50%;
+  background-color: white;
+  border: none;
+}
+
+form .description{
+  width: 20%;
 }
 
 

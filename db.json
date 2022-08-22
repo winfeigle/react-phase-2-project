@@ -8,12 +8,7 @@
     {
       "id": 2,
       "name": "Launch Feedplan App for Market Testing",
-      "progress": 82
-    },
-    {
-      "id": 3,
-      "name": "Read 20 Business Books in 2022",
-      "progress": 84
+      "progress": 60
     }
   ],
   "accomplishments": [
@@ -27,11 +22,6 @@
       "name": "Sell Second Company: FP Media",
       "completed": "September 2016",
       "progress": "59"
-    },
-    {
-      "id": 3,
-      "name": "Graduate College with Honors",
-      "completed": "December 2019"
     }
   ]
 }

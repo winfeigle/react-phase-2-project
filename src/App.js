@@ -33,10 +33,14 @@ function App() {
     console.log(updatedGoals);
   }
 
+  const onFormSubmit = (newData, type) => {
+    console.log(newData, type)
+  }
+
   return (
     <div>
       <NavBar />
-      <Form />
+      <Form onFormSubmit={onFormSubmit}/>
       <Switch>
         <Route path="/goals">
           <Goals goals={goals} onUpdateGoal={onUpdateGoal}/>
