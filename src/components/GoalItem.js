@@ -31,7 +31,7 @@ function GoalItem({ goal, onUpdateGoal, onDeleteClick }) {
             <button onClick={handleDelete} className="delete-button">✕</button>
             <p><b className="label">Goal:</b> {name}</p>
             <p><b className="label">Progress:</b> {progressBar}%</p>
-            <input onChange={handleChange} className="progress-slider" type="range" min="1" max="100" value={progressBar} id="myRange" name={progress}/>
+            <input onChange={handleChange} className="progress-slider" type="range" min="0" max="100" value={progressBar} step="10" id="myRange" name={progress}/>
         </div>
     );
 };
