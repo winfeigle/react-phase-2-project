@@ -20,20 +20,17 @@
     {
       "id": 1,
       "name": "Sell First Company: Epiforce, Inc.",
-      "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
       "completed": "July 2016"
     },
     {
       "id": 2,
       "name": "Sell Second Company: FP Media",
-      "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
       "completed": "September 2016",
       "progress": "59"
     },
     {
       "id": 3,
       "name": "Graduate College with Honors",
-      "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
       "completed": "December 2019"
     }
   ]

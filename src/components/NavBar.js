@@ -20,7 +20,7 @@ function NavBar() {
     return(
         <div id="nav-bar">
           <h1 className="site-title">
-              VISION/BOARD
+              VISION+BOARD
           </h1>
           <NavLink
             to="/"
