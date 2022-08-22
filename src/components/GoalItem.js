@@ -22,7 +22,8 @@ function GoalItem({ goal, onUpdateGoal, onDeleteClick }) {
     }
 
     const handleDelete = () => {
-        console.log(`deleting... Goal #${id}`)
+        let type = "goals";
+        onDeleteClick(id, type)
     }
 
     return(
