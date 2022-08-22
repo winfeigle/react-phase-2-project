@@ -34,7 +34,7 @@ function App() {
   }
 
   const onFormSubmit = (newData, type) => {
-    console.log(newData, type)
+      type === 'goals' ? setGoals(goals => [...goals, newData]) : setAccomplishments(accomplishments => [...accomplishments, newData])
   }
 
   return (

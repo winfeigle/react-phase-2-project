@@ -4,7 +4,7 @@ function Form({ onFormSubmit }){
     const [formType, setFormType] = useState(true)
     const [goalData, setGoalData] = useState({
         name: "",
-        progress: 0
+        progress: ""
     })
     const [accomplishmentData, setAccomplishmentData] = useState({
         name: "",
@@ -45,10 +45,10 @@ function Form({ onFormSubmit }){
             body: JSON.stringify(formType ? goalData : accomplishmentData)
             })
                 .then(res => res.json())
-                .then(newData => onFormSubmit(newData, formType))
+                .then(newData => onFormSubmit(newData, type))
 
         formType ? 
-        setGoalData({name: ""}) : 
+        setGoalData({name: "", progress: ""}) : 
         setAccomplishmentData({name: "", completed: ""})
     };
 
@@ -75,7 +75,16 @@ function Form({ onFormSubmit }){
                 
                 { 
                 // Ternary operator to determine which kind of form we are completing, based off of the dropdown selection.
-                !formType ?
+                formType ?
+                    <label>% Complete
+                    <input 
+                        onChange={handleChange}
+                        type="number"
+                        placeholder="0"
+                        name="progress"
+                        value={goalData.progress}
+                        />
+                    </label> : 
                     <label>Completion Date:
                     <input 
                         onChange={handleChange}
@@ -85,7 +94,6 @@ function Form({ onFormSubmit }){
                         value={accomplishmentData.completed}
                         />
                     </label>
-                    : null
                 }
                 <button type="submit">Add</button>
             </form>
