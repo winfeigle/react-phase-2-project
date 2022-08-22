@@ -4,6 +4,7 @@ import { Route, Switch } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Goals from "./components/Goals";
 import Accomplishments from "./components/Accomplishments";
+import Home from "./components/Home";
 import Form from "./components/Form";
 
 function App() {
@@ -59,6 +60,9 @@ function App() {
       <NavBar />
       <Form onFormSubmit={onFormSubmit}/>
       <Switch>
+      <Route exact path="/">
+          <Home />
+        </Route>
         <Route path="/goals">
           <Goals goals={goals} onUpdateGoal={onUpdateGoal} onDeleteClick={onDeleteClick}/>
         </Route>

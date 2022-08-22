@@ -15,7 +15,7 @@ function NavBar() {
   const activeStyle = {
     border: "solid #00D4FF 2px",
     fontWeight: "bold"
-  }
+  };
 
     return(
         <div id="nav-bar">
@@ -26,12 +26,11 @@ function NavBar() {
             to="/"
             /* set "exact" so it knows to only set activeStyle when route is deeply equal to link */
             exact
-            /* add styling to Navlink */
             style={linkStyles}
             /* add prop for activeStyle */
             activeStyle={activeStyle}
-            >Home</NavLink>
-
+            >Home
+            </NavLink>
           <NavLink
             to="/goals"
             exact

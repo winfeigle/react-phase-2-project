@@ -31,15 +31,16 @@ h2 {
 #nav-bar {
   background-color: #0A2540;
   padding: 25px 0px 40px 50px;
+  align-items: center;
 }
 
-#goals-container {
+#home-icon{
   display: flex;
-  margin-top: 50px;
+  height: 20px;
 }
 
 
-#accomplishments-container{
+#goals-container, #accomplishments-container {
   display: flex;
   margin-top: 50px;
 }
