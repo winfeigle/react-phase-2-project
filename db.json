@@ -3,21 +3,21 @@
     {
       "id": 2,
       "name": "Launch Feedplan App for Market Testing",
-      "progress": 84
+      "progress": 80
     },
     {
       "name": "Complete Flatiron Phase 2 Video Walkthrough",
-      "progress": 90,
+      "progress": 100,
       "id": 4
     },
     {
       "name": "Become a Software Engineer",
-      "progress": 59,
+      "progress": 50,
       "id": 5
     },
     {
       "name": "Own a Porsche Taycan Turbo",
-      "progress": "1",
+      "progress": 10,
       "id": 6
     }
   ],
@@ -34,18 +34,13 @@
       "progress": "59"
     },
     {
-      "name": "Graduate College with Honors",
-      "completed": "December 2019",
-      "id": 3
-    },
-    {
       "name": "Get a Job with Pfizer out of College",
       "completed": "March 2020",
       "id": 4
     },
     {
       "name": "New Accomplishment",
-      "completed": "April 2020",
+      "completed": "June 2013",
       "id": 5
     }
   ]
