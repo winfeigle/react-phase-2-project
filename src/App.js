@@ -41,6 +41,17 @@ function App() {
     fetch(`http://localhost:8000/${type}/${id}`, {
       method: 'DELETE'
     })
+    
+    //Use filter to setGoal or setAccomplishments with new items
+      if(type === 'goals'){
+        setGoals(ogGoals => ogGoals.filter(ogGoal => {
+          return ogGoal.id === id ? null : ogGoal;
+        }))
+      } else{
+        setAccomplishments(ogAccomplishments => ogAccomplishments.filter(ogAccomplishment => {
+          return ogAccomplishment.id === id ? null : ogAccomplishment;
+        }))
+      }
   }
 
   return (
