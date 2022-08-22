@@ -1,14 +1,24 @@
 {
   "goals": [
     {
-      "id": 1,
-      "name": "Complete Flatiron School Software Engineering Bootcamp",
-      "progress": 44
-    },
-    {
       "id": 2,
       "name": "Launch Feedplan App for Market Testing",
-      "progress": 31
+      "progress": 84
+    },
+    {
+      "name": "Complete Flatiron Phase 2 Video Walkthrough",
+      "progress": 90,
+      "id": 4
+    },
+    {
+      "name": "Become a Software Engineer",
+      "progress": 59,
+      "id": 5
+    },
+    {
+      "name": "Own a Porsche Taycan Turbo",
+      "progress": "1",
+      "id": 6
     }
   ],
   "accomplishments": [
@@ -22,6 +32,21 @@
       "name": "Sell Second Company: FP Media",
       "completed": "September 2016",
       "progress": "59"
+    },
+    {
+      "name": "Graduate College with Honors",
+      "completed": "December 2019",
+      "id": 3
+    },
+    {
+      "name": "Get a Job with Pfizer out of College",
+      "completed": "March 2020",
+      "id": 4
+    },
+    {
+      "name": "New Accomplishment",
+      "completed": "April 2020",
+      "id": 5
     }
   ]
 }
