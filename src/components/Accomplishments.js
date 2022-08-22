@@ -13,9 +13,10 @@ function Accomplishments({ accomplishments, onDeleteClick }){
         )
     })
 
+
     return(
         <div id="accomplishments-container">
-            {renderAccomplishments}
+                {renderAccomplishments}
         </div>
     );
 
