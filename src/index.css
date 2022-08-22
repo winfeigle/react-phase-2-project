@@ -24,13 +24,14 @@ code {
 
 #nav-bar {
   background-color: #0A2540;
-  padding: 50px 0px 50px 50px;
+  padding: 25px 0px 40px 50px;
 }
 
 #goals-container {
   display: flex;
   margin-top: 50px;
 }
+
 
 #accomplishments-container{
   display: flex;
@@ -42,7 +43,6 @@ code {
   width: 400px;
   border-radius: 10px;
   padding: 10px 20px;
-  display: flexbox;
 }
 
 #accomplishments-container .card{
@@ -90,6 +90,9 @@ code {
   width: 100%;
 }
 
+#form-container {
+  margin: 50px;
+}
 
 
 

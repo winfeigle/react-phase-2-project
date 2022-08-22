@@ -4,6 +4,7 @@ import { Route, Switch } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Goals from "./components/Goals";
 import Accomplishments from "./components/Accomplishments";
+import Form from "./components/Form";
 
 function App() {
   const [goals, setGoals] = useState([]);
@@ -35,6 +36,7 @@ function App() {
   return (
     <div>
       <NavBar />
+      <Form />
       <Switch>
         <Route path="/goals">
           <Goals goals={goals} onUpdateGoal={onUpdateGoal}/>

@@ -45,9 +45,6 @@ function NavBar() {
             style={linkStyles}
             activeStyle={activeStyle}
             >Accomplishments</NavLink>
-        <p>
-      
-        </p>
         </div>
     );
 }
